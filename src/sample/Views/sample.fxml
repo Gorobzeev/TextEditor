@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="430.0" prefWidth="600.0" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <TextArea fx:id="mainTextArea" prefHeight="460.0" prefWidth="590.0" promptText="write your text" GridPane.columnIndex="1">
+         <GridPane.margin>
+            <Insets top="10.0" />
+         </GridPane.margin>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextArea>
+      <HBox prefHeight="50.0" prefWidth="484.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleOpenAction" prefHeight="25.0" prefWidth="50.0" text="Open">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleSaveAction" prefHeight="25.0" prefWidth="50.0" text="Save">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleSaveAsAction" prefHeight="25.0" prefWidth="60.0" text="Save As">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+            <Label prefHeight="25.0" prefWidth="95.0" text="String Count:">
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Label>
+            <HBox prefHeight="25.0" prefWidth="210.0">
+               <HBox.margin>
+                  <Insets left="70.0" />
+               </HBox.margin>
+               <children>
+                  <TextField fx:id="searchTextField" />
+                  <Button mnemonicParsing="false" text="Search" onAction="#handleSearchText">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <GridPane.margin>
+            <Insets top="5.0" />
+         </GridPane.margin>
+      </HBox>
+   </children>
+</GridPane>
